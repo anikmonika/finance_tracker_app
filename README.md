@@ -27,3 +27,8 @@ To run the tests:
 3. Install dependencies: flutter pub get
 4. Run tests: flutter test
 This app helps users manage finances effectively and ensures stability through reliable unit tests using the AAA pattern.
+
+ENCOUTER PROBLEM : 
+1. The problem that I face, because I use java 23, so I have to change gradle.wrapper.properties to the latest version, which may cause errors if we use java 11, 17 and 21.
+2. The second problem when doing tests is still failed, in the “Counter increments smoke test” test, the test expects a widget with the text “0” to appear on the screen, but apparently no widget is found with that text. This resulted in a TestFailure because the actual results did not match what was expected.
+3. for launching in the emulator sometimes it works sometimes it's an error.
